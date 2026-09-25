@@ -1,10 +1,19 @@
 {
   "name": "validate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validation subagent that stress-tests plans, recommendations and architecture before you act on them. Scores findings by severity (BLOCKER / RISK / PREFERENCE) and returns a PASS / CALIBRATE / REJECT verdict.",
-  "author": { "name": "Guy Cohen", "url": "https://github.com/guycoful" },
+  "author": {
+    "name": "Guy Cohen",
+    "url": "https://github.com/guycoful"
+  },
   "homepage": "https://github.com/guycoful/validate-skill",
   "repository": "https://github.com/guycoful/validate-skill",
   "license": "MIT",
-  "keywords": ["validation","review","planning","quality","subagent"]
+  "keywords": [
+    "validation",
+    "review",
+    "planning",
+    "quality",
+    "subagent"
+  ]
 }

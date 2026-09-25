@@ -9,7 +9,7 @@
       "name": "validate",
       "source": "./",
       "description": "Validation subagent that stress-tests plans, recommendations and architecture before you act on them. Scores findings by severity (BLOCKER / RISK / PREFERENCE) and returns a PASS / CALIBRATE / REJECT verdict.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Guy Cohen"
       },

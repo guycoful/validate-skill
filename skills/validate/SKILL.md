@@ -1,13 +1,13 @@
 ---
 name: validate
-description: Use AUTOMATICALLY after every /advisor output, plan, or architecture recommendation. Also when user types /validate. Spawns a validation subagent that scores findings by severity (BLOCKER/RISK/PREFERENCE) instead of reflexively hunting for blockers. Returns PASS/CALIBRATE/REJECT verdict.
+description: Use AUTOMATICALLY after any plan, recommendation, or architecture proposal (including /advisor output, if you use an advisor skill). Also when user types /validate. Spawns a validation subagent that scores findings by severity (BLOCKER/RISK/PREFERENCE) instead of reflexively hunting for blockers. Returns PASS/CALIBRATE/REJECT verdict.
 ---
 
 # Validate
 
 Spawns a validation subagent to stress-test any recommendation, plan, or architecture before presenting to the user.
 
-**CRITICAL:** This skill MUST run after every `/advisor` output. Never present raw advisor results without validation.
+**CRITICAL:** This skill MUST run after every plan or recommendation (and after every `/advisor` output, if you have that skill). Never present raw recommendations without validation.
 
 ## Critical Calibration Rules (read before every invocation)
 
@@ -24,7 +24,7 @@ calibrating severity, so the model over-indexes on failure modes.
 
 ## When to Use
 
-- **Automatically** after every `/advisor` run (non-negotiable)
+- **Automatically** after every plan or recommendation, including any `/advisor` run (non-negotiable)
 - **Automatically** after any architecture or plan recommendation
 - User types `/validate [topic or context]`
 - Before presenting any deliverable plan to the user
@@ -130,7 +130,7 @@ Three rules when presenting validation:
 2. Don't soften REJECTs into CALIBRATEs to avoid bad news
 3. Always show the CORRECTLY-IDENTIFIED items so the user sees what advisor got right
 
-## Integration with /advisor
+## Integration with /advisor (optional)
 
 The correct flow:
 
