@@ -1,0 +1,22 @@
+{
+  "name": "validate-skill",
+  "owner": {
+    "name": "Guy Cohen",
+    "url": "https://github.com/guycoful"
+  },
+  "plugins": [
+    {
+      "name": "validate",
+      "source": "./",
+      "description": "Validation subagent that stress-tests plans, recommendations and architecture before you act on them. Scores findings by severity (BLOCKER / RISK / PREFERENCE) and returns a PASS / CALIBRATE / REJECT verdict.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guy Cohen"
+      },
+      "license": "MIT"
+    }
+  ],
+  "metadata": {
+    "description": "Guy Cohen: validation subagent for plans and recommendations"
+  }
+}

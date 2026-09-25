@@ -21,7 +21,18 @@
 
 **הסקיל הזה תפס אצלי 84 פעמים בחודשיים האחרונים שקלוד טעה.**
 
-## התקנה ל-Claude Code
+## התקנה ל-Claude Code כתוסף (מומלץ)
+
+בתוך Claude Code:
+
+```
+/plugin marketplace add guycoful/validate-skill
+/plugin install validate@validate-skill
+```
+
+עדכונים מגיעים אוטומטית מהריפו.
+
+## התקנה ידנית ל-Claude Code
 
 ```bash
 # מוודא שיש לך תיקיית skills בקלוד
@@ -29,10 +40,10 @@ mkdir -p ~/.claude/skills/validate
 
 # מוריד את הסקיל
 curl -o ~/.claude/skills/validate/SKILL.md \
-  https://raw.githubusercontent.com/guycoful/validate-skill/main/SKILL.md
+  https://raw.githubusercontent.com/guycoful/validate-skill/main/skills/validate/SKILL.md
 ```
 
-או פשוט להוריד את הקובץ `SKILL.md` ולשים אותו ב:
+או פשוט להוריד את הקובץ `skills/validate/SKILL.md` ולשים אותו ב:
 - **Windows:** `C:\Users\<your-user>\.claude\skills\validate\SKILL.md`
 - **macOS/Linux:** `~/.claude/skills/validate/SKILL.md`
 
